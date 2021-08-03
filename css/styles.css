@@ -443,6 +443,9 @@ footer {
 }
 .auth-nav-icon {
   fill: currentColor;
+  display: block;
+  width: 16px;
+  height: 12px;
 }
 .auth-nav {
   margin-right: 10px;
