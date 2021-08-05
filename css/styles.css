@@ -53,10 +53,6 @@ img {
   margin-bottom: 0;
 }
 
-section {
-  display: block;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -131,8 +127,11 @@ section {
   margin-right: 8px;
 }
 
-.filter-item:hover {
+.filter-item:hover,
+.filter-item:focus {
   color: var(--color-hover--);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .our-command-bg {
@@ -182,6 +181,9 @@ section {
     ),
     url(../images/bg-hero.jpg);
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   padding-top: 200px;
   padding-bottom: 200px;
@@ -205,6 +207,7 @@ section {
   min-width: 200px;
   border-radius: 4px;
   margin-top: 30px;
+  border: transparent;
 }
 
 .our-team {
@@ -220,7 +223,6 @@ section {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--color-black--);
-  margin-bottom: 4px;
 }
 
 .our-team-text {
@@ -351,11 +353,12 @@ section {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
 .flex-element h2 {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-
+  color: #212121;
   margin-bottom: 4px;
   justify-content: center;
 }
@@ -443,7 +446,7 @@ footer {
 }
 .auth-nav-icon {
   fill: currentColor;
-  display: block;
+
   width: 16px;
   height: 12px;
 }
@@ -466,9 +469,9 @@ footer {
   margin-top: 16px;
 }
 .team-iteam {
-  display: block;
-  width: 44px;
-  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px;
   color: #afb1b8;
   cursor: pointer;
@@ -512,8 +515,7 @@ footer {
   display: flex;
   align-items: baseline;
 }
-.social-box {
-}
+
 .social-box-title {
   font-weight: 700;
   font-size: 14px;
@@ -535,4 +537,14 @@ footer {
 .main-navigation {
   display: flex;
   align-items: center;
+}
+.portfolio-work-link:hover,
+.portfolio-work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.flex-element:hover,
+.flex-element:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
